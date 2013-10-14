@@ -1,5 +1,5 @@
 function update_color(){
-    var current_time = Math.floor(new Date().getTime() / 100).toString();
+    var current_time = Math.floor(new Date().getTime() / interval).toString();
 
     var hex = '#' + current_time.substr(current_time.length - 6);
 
@@ -7,4 +7,7 @@ function update_color(){
     document.getElementById('current-color').innerHTML = hex;
 }
 
-setInterval('update_color()',100);
+// update interval in milliseconds
+var interval = 100;
+
+setInterval('update_color()', interval);
