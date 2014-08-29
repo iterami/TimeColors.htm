@@ -10,4 +10,7 @@ function update_color(){
 // update interval in milliseconds
 var interval = 100;
 
-setInterval('update_color()', interval);
+setInterval(
+  'update_color()',
+  interval
+);
