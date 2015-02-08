@@ -11,7 +11,7 @@ function update_color(){
 // Update interval in milliseconds.
 var interval = 100;
 
-setInterval(
+window.setInterval(
   'update_color()',
   interval
 );
