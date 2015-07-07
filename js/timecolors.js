@@ -1,3 +1,5 @@
+'use strict';
+
 function update_color(){
     // Current time in time units set by the update interval.
     var current_time = Math.floor(new Date().getTime() / interval).toString();
