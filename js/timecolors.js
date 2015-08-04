@@ -14,6 +14,7 @@ function update_color(){
 var interval = 100;
 
 window.onload = function(e){
+    update_color();
     window.setInterval(
       'update_color()',
       interval
