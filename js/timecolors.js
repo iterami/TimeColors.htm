@@ -2,7 +2,7 @@
 
 function update_color(){
     // Current time in time units set by the update interval.
-    var current_time = Math.floor(new Date().getTime() / interval).toString();
+    var current_time = Math.floor(time_date_to_timestamp() / interval).toString();
 
     var hex = '#' + current_time.substr(current_time.length - 6);
 
