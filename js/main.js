@@ -2,12 +2,16 @@
 
 function repo_init(){
     core_repo_init({
+      'storage': {
+        'interval': 100,
+      },
+      'storage-menu': '<table><tr><td><input id=interval><td>Interval</table>',
       'title': 'TimeColors.htm',
     });
 
     update_color();
     window.setInterval(
       update_color,
-      interval
+      core_storage_data['interval']
     );
 }
