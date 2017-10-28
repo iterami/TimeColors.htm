@@ -10,8 +10,9 @@ function repo_init(){
     });
 
     update_color();
-    window.setInterval(
-      update_color,
-      core_storage_data['interval']
-    );
+
+    core_interval_modify({
+      'interval': core_storage_data['interval'],
+      'todo': update_color,
+    });
 }
