@@ -12,6 +12,7 @@ function repo_init(){
     update_color();
 
     core_interval_modify({
+      'id': 'update',
       'interval': core_storage_data['interval'],
       'todo': update_color,
     });
