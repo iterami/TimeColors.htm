@@ -7,6 +7,7 @@ function repo_init(){
       },
       'storage-menu': '<table><tr><td><input id=interval><td>Interval</table>',
       'title': 'TimeColors.htm',
+      'ui': '<span id=color></span>',
     });
 
     update_color();
