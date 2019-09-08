@@ -2,6 +2,7 @@
 
 function repo_init(){
     core_repo_init({
+      'info': '<span id=color-info></span>',
       'storage': {
         'interval': 100,
       },

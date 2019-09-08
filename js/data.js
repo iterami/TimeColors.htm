@@ -9,6 +9,7 @@ function update_color(){
     core_ui_update({
       'ids': {
         'color': hex,
+        'color-info': hex,
       },
     });
 }
