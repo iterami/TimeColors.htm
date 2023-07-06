@@ -6,7 +6,7 @@ function repo_init(){
       'storage': {
         'interval': 100,
       },
-      'storage-menu': '<table><tr><td><input class=mini id=interval><td>Interval</table>',
+      'storage-menu': '<table><tr><td><input class=mini id=interval min=1 step=any type=number><td>Interval</table>',
       'title': 'TimeColors.htm',
       'ui': '<span id=color></span>',
     });
