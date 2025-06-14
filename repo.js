@@ -15,13 +15,13 @@ function repo_init(){
 
     core_interval_modify({
       'id': 'update',
-      'interval': core_storage_data['interval'],
+      'interval': core_storage_data.interval,
       'todo': update_color,
     });
 }
 
 function update_color(){
-    const current_time = Math.floor(date_to_timestamp() / core_storage_data['interval']).toString(16);
+    const current_time = Math.floor(date_to_timestamp() / core_storage_data.interval).toString(16);
     const hex = '#' + current_time.substring(current_time.length - 6);
 
     document.body.style.backgroundColor = hex;
