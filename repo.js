@@ -2,7 +2,6 @@
 
 function repo_init(){
     core_repo_init({
-      'info': '<span class=timecolor></span>',
       'storage': {
         'interval': 100,
       },
@@ -30,7 +29,6 @@ function update_color(){
     document.body.style.backgroundColor = hex;
     document.title = timecolor;
     core_ui_update({
-      'classname': true,
       'ids': {
         'timecolor': timecolor,
       },
